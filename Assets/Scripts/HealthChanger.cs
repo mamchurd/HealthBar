@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Slider))]
 public class HealthChanger : MonoBehaviour
 {
 
-    [SerializeField] private Slider _slider;
-    
+    private Slider _slider;  
     private float _maxValue;
     private float _maxTime;
     private Coroutine _coroutine;
